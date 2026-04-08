@@ -1,6 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 # Install libraries needed for this project
-# Runs at SessionStart — always exits 0 so it never blocks the session
+# Runs at SessionStart — only in remote environments
+
+# Only run in remote environments
+if [ "$CLAUDE_CODE_REMOTE" != "true" ]; then
+  exit 0
+fi
 
 echo "=== Installing Libraries ==="
 
