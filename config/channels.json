@@ -26,10 +26,10 @@
     "max_duration_seconds": 7200
   },
   "slack": {
-    "channel_id": "C0ARLNXM336"
+    "channel_id": "C0ARL8CNR0B"
   },
   "notion": {
-    "database_id": "8288971177564078b255fd5ad4835e97"
+    "database_id": "b3a3d7ec970547e78028393301a1e603"
   },
   "processing": {
     "videos_per_channel": 10,
