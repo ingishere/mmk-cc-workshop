@@ -1,0 +1,38 @@
+{
+  "channels": [
+    {
+      "name": "한경글로벌마켓",
+      "channel_id": "UCWskYkV4c4S9D__rsfOl2JA",
+      "enabled": true,
+      "keywords": ["개장전요것만", "빈난새", "월스트리트나우", "김현석", "빈틈없이월가"]
+    },
+    {
+      "name": "한국경제TV",
+      "channel_id": "UCF8AeLlUbEpKju6v1H6p8Eg",
+      "enabled": true,
+      "keywords": ["당잠사"]
+    },
+    {
+      "name": "증시각도기TV",
+      "channel_id": "UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "enabled": true,
+      "keywords": []
+    }
+  ],
+  "filter": {
+    "exclude_keywords": ["shorts", "#shorts", "라이브", "LIVE"],
+    "max_age_hours": 24,
+    "min_duration_seconds": 180,
+    "max_duration_seconds": 7200
+  },
+  "slack": {
+    "channel_id": "C0ARL8CNR0B"
+  },
+  "notion": {
+    "database_id": "b3a3d7ec970547e78028393301a1e603"
+  },
+  "processing": {
+    "videos_per_channel": 10,
+    "max_subtitle_chars": 15000
+  }
+}
