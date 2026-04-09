@@ -9,6 +9,12 @@ fi
 
 echo "=== Installing Libraries ==="
 
+# Python dependencies
+if [ -f "requirements.txt" ]; then
+  echo "pip       : installing requirements..."
+  pip3 install -q -r requirements.txt 2>/dev/null || echo "pip       : FAILED"
+fi
+
 # mmk: Magic Meal Kits CLI (YouTube transcript, metadata, etc.)
 if command -v mmk >/dev/null 2>&1; then
   echo "mmk       : $(mmk version 2>/dev/null || echo 'installed') (already installed)"
